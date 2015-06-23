@@ -1,0 +1,13 @@
+package com.hxy.enums59;
+
+/**
+ * √∂æŸ≤‚ ‘
+ * @author Administrator
+ *
+ */
+public enum Color {
+	Red,
+	White,
+	Blue,
+	Black
+}
