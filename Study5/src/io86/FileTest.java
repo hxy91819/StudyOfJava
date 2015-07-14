@@ -10,8 +10,10 @@ import java.io.IOException;
  */
 public class FileTest {
 	public static void main(String[] args) throws IOException  {
-		File file = new File("D:\\myfile.txt");
+		// Linux系统下，没有盘符的概念。
+		File file = new File("D:/" + File.pathSeparator + "myfile.txt");
 		//Java中所有的IO基本上都有抛出异常
 		System.out.println(file.createNewFile());
+		//File类及代表目录，又代表文件。
 	}
 }
