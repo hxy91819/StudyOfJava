@@ -13,27 +13,28 @@ import java.lang.reflect.Method;
  * 自己的体会：
  * 就是在不修改源代码的情况下，可以代理运行期间生成的类。要对比静态代理的特征。
  * 每个动态代理类，都有一个InvocationHandler
+ * 
  * @author Administrator
  *
  */
 public class DynamicSubject implements InvocationHandler {
 
-	private Object sub;
-	
-	public DynamicSubject(Object obj){
-		this.sub = obj;
-	}
-	
-	@Override
-	public Object invoke(Object proxy, Method method, Object[] args)
-			throws Throwable {
-		System.out.println("before calling: " + method);
-		
-		method.invoke(sub, args);//调用代理函数，等价于Request方法。
-		
-		System.out.println("after calling: " + method);
-		
-		return null;
-	}
+   private Object sub;
+
+   public DynamicSubject(Object obj) {
+      this.sub = obj;
+   }
+
+   @Override
+   public Object invoke(Object proxy, Method method, Object[] args)
+         throws Throwable {
+      System.out.println("before calling: " + method);
+
+      method.invoke(sub, args);//调用代理函数，等价于Request方法。
+
+      System.out.println("after calling: " + method);
+
+      return null;
+   }
 
 }

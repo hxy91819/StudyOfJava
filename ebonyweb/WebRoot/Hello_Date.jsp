@@ -1,13 +1,13 @@
-<%@ page import="java.util.*" pageEncoding="gb2312"%>
+<%@ page import="java.util.*" pageEncoding="UTF-8"%>
 <%@ page contentType="text/html;
                   charset=gb2312" %>
 <HTML>
   <BODY>
-    ÄãºÃ,½ñÌìÊÇ
+    ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   <%
     Date today=new Date();
   %>
-    <%=today.getDate()%>ºÅ£¬
-    ÐÇÆÚ<%=today.getDay()%>
+    <%=today.getDate()%>ï¿½Å£ï¿½
+    ï¿½ï¿½ï¿½ï¿½<%=today.getDay()%>
   </BODY>
 </HTML>
