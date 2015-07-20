@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+
+p {
+	font-family: "微软雅黑";
+	color: grey;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: green;
+	font-family: "consolas"
+}
+
+/*类选择器，同一个标签设置不同的属性，必须在html中使用class类属性才能使用*/
+p.right {
+	text-align: right
+}
+
+p.center {
+	text-align: center
+}
+
+.center {
+	text-align: center
+}
+
+/*id选择器*/
+#green {
+	color: green
+}
+
+p#blue {
+	color: blue
+}
