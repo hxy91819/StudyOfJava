@@ -1,31 +1,33 @@
 @CHARSET "UTF-8";
 
-/* body {
-	background-color: black
-} */
+body {
+	background-color: #cce8cf
+}
+
 h1 {
 	color: green;
 	font-size: 20pt
 }
 
+/* 不能直接设置color */
 hr {
-	color: red
+	border:1px solid blue
 }
 
 /* 设置链接点了之后的颜色 */
-
+/* 链接初始颜色 */
 a:link {
 	color: green
 }
-
+/* 链接查看过的颜色 */
 a:visited {
 	color: yellow
 }
-
+/* 当鼠标停留在链接上的颜色 */
 a:hover {
 	color: black
 }
-
+/* 当鼠标点下的时候，链接上的颜色 */
 a:active {
 	color: blue
 }
