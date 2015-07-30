@@ -7,11 +7,11 @@
 <title>转换ICS日志中的SQL为可执行SQL</title>
 </head>
 <body>
-	<form action="SQLResult.jsp">
+	<form action="SQLResult.jsp" method="post">
 		<h4>请输入待转换的ICS日志SQL</h4>
 		<textarea rows="20" cols="80" name="ICSSQL"></textarea>
 		<br />
-		<input type="submit" value="提交"  style="width: 555px;height: 100px;" />
+        <input type="submit" value="提交" />&nbsp;&nbsp;&nbsp; <input type="reset" value="重置" />
 	</form>
 </body>
 </html>
