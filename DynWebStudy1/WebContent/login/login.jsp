@@ -7,7 +7,8 @@
 </head>
 <body>
 	<!-- 这种指定了上下文的方式比较好，能够直接指定访问的Servlet -->
-	<form action="/DynWebStudy1/LoginServlet" method="post">
+	<!-- <form action="/DynWebStudy1/LoginServlet" method="post"> -->
+	<form action="result.jsp" method="post">
 		username:<input type="text" name="username" /> <br /> 
 		password:<input type="password" name="password" /><br /> 
 		<input type="submit" value="submit" /> &nbsp;&nbsp;&nbsp; 
