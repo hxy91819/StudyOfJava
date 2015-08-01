@@ -7,6 +7,7 @@
 <title>loginResult</title>
 </head>
 <body>
+    <h1>jsp的返回结果：</h1><br />
     <% 
     String username = request.getParameter("username");
     String password = request.getParameter("password");

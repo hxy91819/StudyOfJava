@@ -45,4 +45,14 @@
     <servlet-name>RegisterServlet</servlet-name>
     <url-pattern>/RegisterServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DoubleColorBallServlet</display-name>
+    <servlet-name>DoubleColorBallServlet</servlet-name>
+    <servlet-class>com.hxy.doubleColorBall.DoubleColorBallServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoubleColorBallServlet</servlet-name>
+    <url-pattern>/DoubleColorBallServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
