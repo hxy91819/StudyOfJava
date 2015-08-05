@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,13 +6,15 @@
 <title>loginResult</title>
 </head>
 <body>
-    <h1>jsp的返回结果：</h1><br />
-    <% 
-    String username = request.getParameter("username");
-    String password = request.getParameter("password");
-    
-    out.println("username:" + username + "<br>");
-    out.println("password:" + password);
+    <h1>jsp的返回结果：</h1>
+    <br />
+    <%
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+
+        out.println("username:" + username + "<br>");
+        out.println("password:" + password);
+
     %>
 </body>
 </html>
