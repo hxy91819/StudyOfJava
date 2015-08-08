@@ -14,6 +14,7 @@
 	<!-- JSP中的Java代码可以与Html组合嵌套 -->
 	<%
 		for (int i = 0; i < 2; i++) {
+			System.out.println("yes!");
 	%>
 	你好
 	<br>
