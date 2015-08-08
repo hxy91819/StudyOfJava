@@ -7,13 +7,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Hello World Of Jsp : <%= new Date().toLocaleString() %></h1>
-    
-    <!-- JSP中的Java代码可以与Html组合嵌套 -->
-    <%
-            for(int i = 0; i < 2; i ++){
-        %>
-        你好<br>
-    <% }%>
+	<h1>
+		Hello World Of Jsp :
+		<%=new Date().toLocaleString()%></h1>
+
+	<!-- JSP中的Java代码可以与Html组合嵌套 -->
+	<%
+		for (int i = 0; i < 2; i++) {
+	%>
+	你好
+	<br>
+	<%
+		}
+	%>
 </body>
 </html>
